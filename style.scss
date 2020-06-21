@@ -3,17 +3,23 @@
     background-color: #ff00f2;
 }
 
+%SharedColor {
+    color: blue;
+}
 @media screen and (max-width: 800px) {
+    %mobileColor {
+        background-color: deeppink;
+    }
     header {
         height: 10%;
-        background-color: deeppink;
+        @extend %mobileColor;
         background-size: 10%;
     }
     th {
-        background-color: deeppink;
+        @extend %mobileColor;
     }
     td {
-        background-color: deeppink;
+        @extend %mobileColor;
     }
 }
 img {
@@ -31,6 +37,9 @@ img {
 
 #footer {
     text-align: center;
+    h6 {
+        font-family: Verdana, Arial;
+    }
 }
 
 #footer > h6 {
@@ -38,18 +47,14 @@ img {
 }
 
 #footer h6:hover {
-    color: blue;
-}
-
-#footer h6 {
-    font-family: Verdana, Arial;
+    @extend %SharedColor;
 }
 
 th {
     color: rgb(168, 0, 0);
 }
 td {
-    color: rgb(0, 19, 190);
+    @extend %SharedColor;
 }
 .table-data {
     color:black;
@@ -64,18 +69,15 @@ ul {
 }
 
 li {
-    display:inline-block;
     float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111111;
+    a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+        &:hover {
+            background-color: #111111;
+        }
+    }
 }
