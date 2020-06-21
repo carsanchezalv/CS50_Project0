@@ -1,0 +1,43 @@
+  
+.nav-item:hover {
+    background-color: #ff00f2;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        background-color: deeppink;
+    }
+}
+img {
+    width: 50%;
+}
+
+.row {
+    padding: 10%;
+}
+
+#footer {
+    text-align: center;
+}
+
+#footer > h6 {
+    color: black;
+}
+
+#footer h6:hover {
+    color: blue;
+}
+
+#footer h6 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+th {
+    color: rgb(168, 0, 0);
+}
+td {
+    color: rgb(0, 19, 190);
+}
+.table-data {
+    color:black;
+}
