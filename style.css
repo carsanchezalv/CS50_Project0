@@ -1,10 +1,6 @@
   
-.nav-item:hover {
-    background-color: #ff00f2;
-}
-
 @media screen and (max-width: 800px) {
-    header {
+    #container {
         height: 10%;
         background-color: deeppink;
         background-size: 10%;
@@ -20,29 +16,9 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 60%;
+    max-width: 50%;
     height: auto;
     border-radius: 10px;
-}
-
-.row {
-    padding: 10%;
-}
-
-#footer {
-    text-align: center;
-}
-
-#footer > h6 {
-    color: black;
-}
-
-#footer h6:hover {
-    color: blue;
-}
-
-#footer h6 {
-    font-family: Verdana, Arial;
 }
 
 th {
@@ -59,23 +35,65 @@ ul {
     list-style-type: none;
     margin: 0;
     text-align: center;
+    font-size: 35px;
     overflow: hidden;
     background-color: #333333;
+    float: none;
+    position: relative;
+    
 }
 
 li {
     display:inline-block;
     float: left;
+    padding-right: 1%
 }
 
 li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 16px;
+    padding: 50%;
     text-decoration: none;
+    font-family: Verdana, Arial;
 }
 
-li a:hover {
-    background-color: #111111;
+.nav-item:hover {
+    background-color: #ff00f2;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+th {
+    background-color: #4CAF50;
+    color: white;
+    height: 50px;
+}
+
+#main-table {
+    width: 70%;
+    margin-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 2%;
+}
+
+.description h1 {
+    padding-bottom:1%;
+    padding-top:1%;
+    text-align: center;
+}
+.description h5 {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 1%;
+    text-align:justify;
+}
+.description h6 {
+    text-align: center;
+    color:red;
+}
+.signature h6 {
+    margin-top: 5%;
+    text-align: center;
+    color:black;
+    background-color: rgba(127, 255, 212, 0.767);
 }
